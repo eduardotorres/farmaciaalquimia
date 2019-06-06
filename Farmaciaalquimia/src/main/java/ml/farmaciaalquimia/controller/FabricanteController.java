@@ -26,13 +26,13 @@ public class FabricanteController {
 	public String listaFabricantes(Model model){
 		List<Fabricante> listaFabricantes = fabricanteService.findAll();
 		model.addAttribute("listaFabricantes", listaFabricantes);
-		return "module/fabricantes/index";
+		return "module/fabricante/index";
 	}
 	
 	@PostMapping("/fabricantes")
 	public String save(@ModelAttribute("fabricanteForm") Fabricante fabricante, BindingResult bindingResult){
 		 if (bindingResult.hasErrors()) {
-	            return "module/fabricantes/fabricanteForm";
+	            return "module/fabricante/fabricanteForm";
 		 }
 		 fabricanteService.save(fabricante);
 		 
@@ -62,7 +62,7 @@ public class FabricanteController {
 		return "redirect:/fabricante";
 	}
 	
-	@GetMapping("fabricante/form")
+	@GetMapping("fabricantes/form")
 	public String prepareFabricanteForm(Model model){
 		Fabricante fabricante= new Fabricante();
 		model.addAttribute("fabricanteForm", fabricante);

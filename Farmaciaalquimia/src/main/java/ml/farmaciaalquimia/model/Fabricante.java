@@ -60,11 +60,6 @@ public class Fabricante {
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		return "Fabricante [Id=" + id + ", descricao=" + descricao + ", getId()=" + getId()
-				+ ", getDescricao()=" + getDescricao() + ", hashCode()=" + hashCode() + ", getClass()=" + getClass()
-				+ ", toString()=" + super.toString() + "]";
-	}
+
 
 }

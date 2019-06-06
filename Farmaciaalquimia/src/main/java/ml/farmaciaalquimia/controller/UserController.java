@@ -1,6 +1,7 @@
 package ml.farmaciaalquimia.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -64,7 +65,7 @@ public class UserController {
     @GetMapping({"/", "/welcome"})
     public String welcome(Model model) {
     	
-    	model.addAttribute("produto","Produto poderia ser um objeto");
+    	model.addAttribute("fabricante","...");
         return "welcome";
     }
 
