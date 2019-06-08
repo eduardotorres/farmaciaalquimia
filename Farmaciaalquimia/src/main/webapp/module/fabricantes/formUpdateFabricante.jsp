@@ -30,11 +30,11 @@
                     <form:errors path="id"></form:errors>
                 </div>
             </spring:bind>
-             <spring:bind path="nome">
+             <spring:bind path="name">
                 <div class="form-group ${status.error ? 'has-error' : ''}">
-                    <form:input type="text" path="nome" class="form-control" placeholder="Nome do fabricante"
+                    <form:input type="text" path="name" class="form-control" placeholder="Nome do fabricante"
                                 autofocus="true"></form:input>
-                    <form:errors path="nome"></form:errors>
+                    <form:errors path="name"></form:errors>
                 </div>
             </spring:bind>
 
