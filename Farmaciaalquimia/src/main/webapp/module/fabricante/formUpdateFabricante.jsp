@@ -19,7 +19,7 @@
 
     <div class="container">
          
-        <form:form action="/fabricante/update" method="POST" modelAttribute="fabricanteUpdate" >
+        <form:form action="/fabricantes/update" method="POST" modelAttribute="fabricanteUpdate" >
         
             <h2 class="form-signin-heading">Atualizando um fabricante</h2>
             

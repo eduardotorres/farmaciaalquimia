@@ -17,7 +17,7 @@
         </form>
 
         <h3>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a></h3>
-    	<p><a href="/fabricante/form">Cadastrar Fabricante</a></p>
+    	<p><a href="/fabricantes/form">Cadastrar Fabricante</a></p>
     	<p><a href="fabricantes">Listar Fabricantes</a></p>
     	
 	    <c:if test="${not empty listaFabricantes}">
