@@ -11,7 +11,7 @@ public class Fabricante {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
-	private String nome;
+	private String name;
 	private String descricao;
 
 	public long getId() {
@@ -61,13 +61,15 @@ public class Fabricante {
 		return true;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
+
+
 
 
 

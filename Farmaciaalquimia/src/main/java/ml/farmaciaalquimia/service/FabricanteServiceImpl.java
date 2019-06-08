@@ -39,6 +39,12 @@ public class FabricanteServiceImpl implements FabricanteService {
 	public void delete(Long id) {
 		fabricanteRepository.deleteById(id);
 	}
+
+
+	@Override
+	public Fabricante findByName(String name) {
+		return fabricanteRepository.findByName(name);
+	}
 	
 	
 
