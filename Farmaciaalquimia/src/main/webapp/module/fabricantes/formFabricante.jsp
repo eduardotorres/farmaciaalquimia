@@ -22,7 +22,13 @@
         <form:form action="/fabricantes" method="POST" modelAttribute="fabricanteForm" >
         
             <h2 class="form-signin-heading">Criando um Fabricante</h2>
-            
+             <spring:bind path="nome">
+                <div class="form-group ${status.error ? 'has-error' : ''}">
+                    <form:input type="text" path="nome" class="form-control" placeholder="Nome do fabricante"
+                                autofocus="true"></form:input>
+                    <form:errors path="nome"></form:errors>
+                </div>
+            </spring:bind>
 
            <spring:bind path="descricao">
                 <div class="form-group ${status.error ? 'has-error' : ''}">

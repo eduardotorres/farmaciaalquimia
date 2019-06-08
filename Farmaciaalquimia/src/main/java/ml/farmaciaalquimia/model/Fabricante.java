@@ -11,6 +11,7 @@ public class Fabricante {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
+	private String nome;
 	private String descricao;
 
 	public long getId() {
@@ -58,6 +59,14 @@ public class Fabricante {
 		if (id != other.id)
 			return false;
 		return true;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 

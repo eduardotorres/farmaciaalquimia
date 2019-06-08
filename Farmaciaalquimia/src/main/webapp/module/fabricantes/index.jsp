@@ -23,11 +23,12 @@
 	    <c:if test="${not empty listaFabricantes}">
 	
 			<ul>
-				<c:forEach var="fabricante" items="${listaFabricantes}">
+				<c:forEach var="fabricantes" items="${listaFabricantes}">
 					
 					
 					  <div class="row">
-					    <div class="col-sm-4" style="background-color:lavenderblush;">${fabricante.descricao}</div>
+					  	<div class="col-sm-4" style="background-color:lavender;">${fabricante.nome}</div>
+					  	<div class="col-sm-4" style="background-color:lavenderblush;">${fabricante.descricao}</div>
 			    			<div class="col-sm-2" style="background-color:lavender;">
 			                       <a href="/fabricantes/delete/${fabricante.id}">Excluir</a></p>
 			                </div>
