@@ -1,2 +1,2 @@
 # farmaciaalquimia
-My Web project to a drugstore.
+My Web project of backend to a drugstore.
